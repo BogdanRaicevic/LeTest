@@ -1,0 +1,271 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+#resime-crveno {
+    color: darkred;
+    font-weight: 600;
+}
+
+#okvir {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: beige;
+}
+
+.resime-col {
+    height: 4rem;;
+/*    max-height: 20rem;*/
+    padding: 0.5rem;
+    background-color: greenyellow;
+    display: inline-block;
+    width: 100%;
+    max-width: 10rem;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.podaci-bold {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    width: 100%;
+    max-width: 5rem;
+    margin-right: 3%;
+  
+}
+
+.podaci-desno {
+    font-weight: 200;
+/*    margin-left: 30%;*/
+    text-align: left;
+ 
+}
+
+.podaci {
+    display: block;
+/*    float: left;*/
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    list-style-type: none;
+    
+}
+.podaci p {
+    display: inline-block;
+}
+
+.podaci li:first-child{
+       margin-top:0px;
+}
+
+.pocaci {
+    `
+}
+
+#resime-personalinfo {
+    display: block;
+    float: right;
+    width: 30%;
+}
+
+#resime-gridus {
+    display: block;
+    float: left;
+    width: 70%;
+    
+}
+
+#experience {
+    
+}
+
+#footer {
+    display: block;
+    padding-top: 2rem;
+}
+
+#header {
+    display: block;
+}
+
+#skills {
+    display: block;
+    float: right;
+    width: 70%;
+}
+
+.skills-col {
+     height: 4rem;;
+/*    max-height: 20rem;*/
+    padding: 0.5rem;
+    background-color: aqua;
+    display: inline-block;
+    width: 100%;
+    max-width: 10rem;
+}
+
+#pro-experience {
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+
+.fut-col {
+    display: block;
+    width: 25%;
+    background-color: darkkhaki;
+    float: left;
+}
+
+
+
+
+.slika {
+    height: 360px;
+    display: block;
+    float: left;
+    width:30%;
+    background-image: url("http://neuethemes.net/preview/wp/gridus/wp-content/themes/gridus/assets/custom/images/userpic01.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#profil {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.svasta {
+    display: block;
+    float: right;
+    width:70%;
+}
+
+.sivo {
+    padding: 10px;
+    background-color: dimgray;
+    min-height: 100px;
+}
+
+.link {
+/*    max-width: 40px;*/
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li{
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    min-height: 110px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 1023px) {
+        #resime-gridus, #resime-personalinfo {
+            float: none;
+            width: auto;
+            background-color: red;
+        }
+    
+    
+    #skills, #pro-experience{
+        float: none;
+        width: auto;
+        background-color: yellow;
+    }
+    
+    .fut-col{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    
+    #nav li {
+        
+        width: 33.33%;
+        text-align: center;
+        background-color: darkslategrey;
+    }
+    
+    .slika, .svasta{
+        float: none;
+        width: auto;
+    }
+    
+    #profil{
+/*        transform:scale(2.2);*/
+        vertical-align: center;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (min-width:1024px) and (max-width: 1439px) {
+        #resime-gridus, #resime-personalinfo {
+/*
+            float: none;
+            width: auto;
+*/
+            background-color: blue;
+        }
+    
+    #resime-gridus{
+        min-height: 371.56px;
+    }
+    #pro-experience{
+        min-height: 158.44px;
+    }
+    
+    #skills, #pro-experience{
+        background-color: brown;
+    }
+    
+    .fut-col{
+        float: left;
+        width:50%;
+/*        text-align: left;*/
+    }
+    
+    #nav li {
+        
+        width: 16.5%;
+        text-align: center;
+        background-color: salmon;
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+        #resime-gridus, #resime-personalinfo {
+/*
+            float: none;
+            width: auto;
+*/
+            background-color: purple;
+        }
+    
+}
