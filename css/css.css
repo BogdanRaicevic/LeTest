@@ -3,13 +3,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
 #resime-crveno {
     color: darkred;
     font-weight: 600;
@@ -23,14 +16,24 @@ body{
 }
 
 .resime-col {
-    height: 4rem;;
+/*    height: 4rem;*/
 /*    max-height: 20rem;*/
-    padding: 0.5rem;
+
+    padding: 1.5rem;
     background-color: greenyellow;
     display: inline-block;
     width: 100%;
     max-width: 10rem;
 }
+.resime-col p{
+    padding-left: 2.5rem;
+    margin-top: 0;
+}
+
+.resime-col h4{
+    margin: 0 !important;
+}
+
 
 h1, h2, h3 {
     text-transform: uppercase;
@@ -54,41 +57,46 @@ h1, h2, h3 {
 }
 
 .podaci {
+/*
     display: block;
-/*    float: left;*/
+    float: left;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     list-style-type: none;
+*/
     
 }
+
 .podaci p {
     display: inline-block;
+    width: auto;
 }
 
 .podaci li:first-child{
        margin-top:0px;
 }
 
-.pocaci {
-    `
-}
 
 #resime-personalinfo {
     display: block;
     float: right;
-    width: 30%;
+/*    width: 30%;*/
+    width: 18%;
+/*    padding: 3rem 4.2rem 3.4rem 4.2rem;*/
+    padding: 3% 4%;
+    position: relative;
 }
 
 #resime-gridus {
     display: block;
     float: left;
-    width: 70%;
-    
+    width: 66%;
+/*    width: auto;*/
+/*    padding: 3rem 4.2rem 3.4rem 4.2rem;*/
+    padding: 3% 4%;
 }
 
-#experience {
-    
-}
+
 
 #footer {
     display: block;
@@ -102,7 +110,9 @@ h1, h2, h3 {
 #skills {
     display: block;
     float: right;
-    width: 70%;
+    width: 66%;
+    padding: 3% 4%;
+    
 }
 
 .skills-col {
@@ -118,7 +128,9 @@ h1, h2, h3 {
 #pro-experience {
     display: block;
     float: left;
-    width: 30%;
+    width: 18%;
+    padding: 3% 4%;
+    position: relative;
 }
 
 
@@ -162,6 +174,28 @@ h1, h2, h3 {
     min-height: 100px;
 }
 
+.sivo>h2{
+    float: left;
+}
+.sivo>#download-portfolio{
+    float: right;
+}
+
+
+
+.tamno-sivo{
+    padding: 10px;
+    background-color: #363636;
+    min-height: 100px;
+}
+
+.tamno-sivo>h1{
+    float: left;
+}
+.tamno-sivo>#download{
+    float: right;
+}
+
 .link {
 /*    max-width: 40px;*/
 }
@@ -173,6 +207,11 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
+#nav li a{
+    color: #e2dfbd;
+    text-decoration: none;
+}
+
 #nav li{
     float: left;
     padding-top: 5px;
@@ -181,6 +220,86 @@ h1, h2, h3 {
     min-height: 110px;
 }
 
+
+
+.transition{
+    
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+/*  margin: 10px;*/
+}
+.overlay {
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      height: 0;
+/*      background: rgba(255, 0, 0, 0);*/
+    transition: all 0.5s ease;
+}
+
+.overlay:hover{
+    background-color: yellow;
+    transition: all 0.5s;
+    height: 100px;
+}
+
+.transition :hover .overlay, .overlay:hover{
+    height: 100%;
+    background-color: rgba(47, 40, 40, 0.67);
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    color: beige;
+}
+
+.transition > .overlay-content{
+    display: block;
+}
+
+#home{
+    background-color: skyblue !important;
+}
+#resume{
+    background-color: #ff6b34 !important;
+}
+#portfolio{
+    background-color: #eb87df !important;
+}
+#contacts{
+    background-color: #ffff48 !important;
+}
+#feedback{
+    background-color: #0fb501 !important;
+}
+#blog{
+    background-color: rosybrown !important;
+}
+
+#download{
+    min-width: 120px;
+    height: 100px;
+    background-color: dimgray;
+    padding: 0;
+    margin: -10px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+#download-portfolio{
+    min-width: 120px;
+    height: 100px;
+    background-color: #363636;
+    padding: 0;
+    margin: -10px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
 
 
 @media screen and (min-width:320px) and (max-width: 1023px) {
@@ -220,7 +339,21 @@ h1, h2, h3 {
         vertical-align: center;
         margin: auto;
     }
+    
+    #download-portfolio, #download, .hide{
+        
+        visibility: hidden;
+    }
 
+    .resime-col{
+        background-color: lightseagreen;
+        display: block;
+        width: 95%;
+        max-width: 1440px;
+        margin-bottom: 1rem;
+        
+    }
+    
     
 }
 
@@ -233,11 +366,8 @@ h1, h2, h3 {
             background-color: blue;
         }
     
-    #resime-gridus{
-        min-height: 371.56px;
-    }
-    #pro-experience{
-        min-height: 158.44px;
+    #resime-gridus, #resime-personalinfo, #skills, #pro-experience{
+        min-height: 450px;
     }
     
     #skills, #pro-experience{
@@ -252,7 +382,7 @@ h1, h2, h3 {
     
     #nav li {
         
-        width: 16.5%;
+        width: 16.66%;;
         text-align: center;
         background-color: salmon;
     }
@@ -260,12 +390,26 @@ h1, h2, h3 {
 }
 
 @media screen and (min-width:1440px) {
-        #resime-gridus, #resime-personalinfo {
+    #resime-gridus, #resime-personalinfo {
 /*
-            float: none;
-            width: auto;
+        float: none;
+        width: auto;
 */
-            background-color: purple;
-        }
+        background-color: purple;
+        min-height: 430px;
+    }
+    
+    #nav li {
+        
+        width: 16.66%;
+        text-align: center;
+        background-color: salmon;
+    }
+    
+    #skills, #pro-experience{
+        min-height: 430px;
+    }
     
 }
+
+
