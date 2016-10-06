@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myapp">
 
 <?php
     include 'include/head.php';
@@ -12,6 +12,7 @@
         
         <?php
         include 'include/header.php';
+        include 'include/angular-view.php';
         include 'include/resime.php';
         include 'include/experience.php';
         include 'include/footer.php';
@@ -22,6 +23,8 @@
 
 	
 </body>
+
+<script src="js/route.js"></script>
 
 <!--
 <script>

@@ -1,0 +1,16 @@
+
+<div id="row">
+    <div class="well" ui-view></div> 
+</div>
+
+<!--
+<div id="row">
+    <div id="levo">
+        <div class="well" ui-view="viewA"></div>
+    </div>
+    
+    <div id="desno">
+        <div class="well" ui-view="viewB"></div> 
+    </div>
+</div>
+-->
