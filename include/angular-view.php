@@ -1,6 +1,13 @@
 
 <div id="row">
-    <div class="well" ui-view></div> 
+   <div class="well" ui-view>
+       
+   </div> 
+<!--
+    <div class="well" ui-view="v1"></div> 
+    <div class="well" ui-view="v2"></div> 
+    <div class="well" ui-view="v3"></div> 
+-->
 </div>
 
 <!--

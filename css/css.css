@@ -100,7 +100,7 @@ h1, h2, h3 {
 
 #footer {
     display: block;
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
 }
 
 #header {
@@ -477,8 +477,9 @@ h1, h2, h3 {
 }
 
 #row {
+    display: block;
     width: 100%;
-    height: 10rem;
+    /*height: 10rem;*/
 }
 
 #levo {

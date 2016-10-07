@@ -1,0 +1,15 @@
+<div class="skilset">
+    <h1>{{content}}</h1>
+    <h2>{{personalInfo}}</h2>
+    <a ng-click="showPersonalInfo()">Products</a>
+
+    <div ng-show="personalInfo">
+    	PERSONAL INFORMATION BLA BLA BLA
+    </div>
+    <div ui-view="menu" style="background-color: yellow">
+    	
+    </div>
+    <div ui-view="content" style="background-color: red">
+    	
+    </div>
+</div>
